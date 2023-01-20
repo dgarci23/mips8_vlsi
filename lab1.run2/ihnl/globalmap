@@ -1,0 +1,10 @@
+CADENCE IHNL11140
+$model
+lab1_dgarci23/nor3/schematic nor3
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

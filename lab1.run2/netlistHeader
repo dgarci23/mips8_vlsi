@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Jan 20 16:47:12 2023
+// Design library name: lab1_dgarci23
+// Design cell name: nor3
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

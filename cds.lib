@@ -15,3 +15,4 @@ DEFINE      NCSU_TechLib_tsmc04_4M2P    $CDK_DIR/lib/NCSU_TechLib_tsmc04_4M2P
 DEFINE analogLib $IC/tools.lnx86/dfII/etc/cdslib/artist/analogLib
 DEFINE functional $IC/tools.lnx86/dfII/etc/cdslib/artist/functional
 DEFINE sbaLib $IC/tools.lnx86/dfII/etc/cdslib/artist/sbaLib
+DEFINE lab1_dgarci23 /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab1_dgarci23

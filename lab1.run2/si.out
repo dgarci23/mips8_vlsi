@@ -1,0 +1,188 @@
+
+Spectre (R) Circuit Simulator
+Version 17.1.0.627.isr15 64bit -- 9 May 2019
+Copyright (C) 1989-2018 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence and Spectre are registered trademarks of Cadence
+        Design Systems, Inc. All others are the property of their respective
+        holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: dgarci23   Host: student06.cse.nd.edu   HostID: 4A815798   PID: 23832
+Memory  available: 29.2561 GB  physical: 33.6336 GB
+sh: lsb_release: command not found
+CPU Type: Quad-Core AMD Opteron(tm) Processor 2356
+All processors running at 2300.0 MHz
+        Socket: Processors
+        0:       0,  1,  2,  3
+        1:       4,  5,  6,  7
+        
+System load averages (1min, 5min, 15min) : 0.6 %, 1.0 %, 0.9 %
+
+
+Simulating `si.inp' on student06.cse.nd.edu at 4:49:02 PM, Fri Jan 20, 2023
+        (process id: 23832).
+Current working directory:
+        /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab1.run2
+Command line:
+     \
+        /escnfs/home/csesoft/cadence/installs/SPECTRE171/tools.lnx86/bin/spectre
+        \
+        -64 si.inp
+Reading file: 
+        /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab1.run2/si.inp
+Reading file: 
+        /escnfs/home/csesoft/cadence/installs/SPECTRE171/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file: 
+        /escnfs/home/csesoft/cadence/installs/SPECTRE171/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/include/stdc-predef.h
+Reading file: 
+        /escnfs/home/csesoft/cadence/installs/NCSU/ncsu-cdk-1.6.0.beta/models/spectre/standalone/ami06N.m
+Reading file: 
+        /escnfs/home/csesoft/cadence/installs/NCSU/ncsu-cdk-1.6.0.beta/models/spectre/standalone/ami06P.m
+Time for NDB Parsing: CPU = 143.231 ms, elapsed = 178.394 ms.
+Time accumulated: CPU = 206.305 ms, elapsed = 178.408 ms.
+Peak resident memory used = 53.4 Mbytes.
+
+Time for Elaboration: CPU = 40.242 ms, elapsed = 41.079 ms.
+Time accumulated: CPU = 246.811 ms, elapsed = 219.747 ms.
+Peak resident memory used = 60.4 Mbytes.
+
+
+Time for EDB Visiting: CPU = 1.324 ms, elapsed = 1.32489 ms.
+Time accumulated: CPU = 248.431 ms, elapsed = 221.364 ms.
+Peak resident memory used = 61.1 Mbytes.
+
+
+Global user options:
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 7
+            bsim3v3 6     
+            vsource 5     
+
+Analysis and control statement inventory:
+               tran 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 0     
+
+Time for parsing: CPU = 3.877 ms, elapsed = 11.3978 ms.
+Time accumulated: CPU = 252.528 ms, elapsed = 232.981 ms.
+Peak resident memory used = 62.5 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+**************************************************
+Transient Analysis `tran1': time = (0 s -> 410 ns)
+**************************************************
+DC simulation time: CPU = 1.027 ms, elapsed = 1.02687 ms.
+
+Notice from spectre during transient analysis `tran1'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSF file si.raw/tran1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 410 ns
+    step = 100 ps
+    maxstep = 8.2 ns
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   4       (current)
+                 save   7       (voltage)
+
+...
+
+Notice from spectre at time = 16.4025 ns during transient analysis `tran1'.
+    Found trapezoidal ringing on node y.
+Notice from spectre at time = 19.4349 ns during transient analysis `tran1'.
+    Found trapezoidal ringing on node y.
+Notice from spectre at time = 25.0375 ns during transient analysis `tran1'.
+    Found trapezoidal ringing on node y.
+
+....
+
+Notice from spectre at time = 33.2375 ns during transient analysis `tran1'.
+    Found trapezoidal ringing on node y.
+
+......
+
+Notice from spectre at time = 41.4375 ns during transient analysis `tran1'.
+    Found trapezoidal ringing on node y.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             256
+
+Notice from spectre during transient analysis `tran1'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(/net10) = 5.069 V
+I: I(V0:p) = 70.88 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+        Spectre  1 (3.8 %)       2 (7.7 %)       3 (33.3 %)      4 (41.7 %)
+                 7 (8.0 %)      
+        Other   
+Initial condition solution time: CPU = 1.116 ms, elapsed = 1.11818 ms.
+Intrinsic tran analysis time:    CPU = 25.923 ms, elapsed = 27.7269 ms.
+Total time required for tran analysis `tran1': CPU = 29.756 ms, elapsed =
+        37.9412 ms.
+Time accumulated: CPU = 290.319 ms, elapsed = 282.701 ms.
+Peak resident memory used = 64.5 Mbytes.
+
+
+Notice from spectre.
+    23 notices suppressed.
+
+
+Aggregate audit (4:49:03 PM, Fri Jan 20, 2023):
+Time used: CPU = 295 ms, elapsed = 295 ms, util. = 100%.
+Time spent in licensing: elapsed = 16.5 ms, percentage of total = 5.59%.
+Peak memory used = 65 Mbytes.
+Simulation started at: 4:49:02 PM, Fri Jan 20, 2023, ended at: 4:49:03 PM, Fri
+        Jan 20, 2023, with elapsed time (wall clock): 295 ms.
+spectre completes with 0 errors, 0 warnings, and 8 notices.

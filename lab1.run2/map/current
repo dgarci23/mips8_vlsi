@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "nor3"
+  repList "spectre cmos_sch schematic"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab1.run2"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "lab1_dgarci23/nor3/schematic" "nor3" )
+ )
+( "nor3" "ihnl/cds0/map" )
+ )
