@@ -1,0 +1,12 @@
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/cds.lib
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/cdsLibMgr.il
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/cdsenv
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/cdsinfo.tag
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/cdsinit
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/common_bindkeys.il
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/display.drf
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/layoutPlotTemplate
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/lib.defs
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/merge_display.pl
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/schPlotTemplate
+wget https://raw.githubusercontent.com/mmorri22/f22-cse40462/main/simrc
