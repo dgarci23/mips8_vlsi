@@ -1,0 +1,9 @@
+
+// Library name: hw2_dgarci23
+// Cell name: sim_nand2
+// View name: schematic
+I0 (A B AandB) nand2
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=200n delay=10n \
+        rise=500.0p fall=500.0p width=99.5n
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=100n delay=10n \
+        rise=500.0p fall=500.0p width=49.5n

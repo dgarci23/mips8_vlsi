@@ -1,0 +1,4 @@
+    N0 (D G S 0) ami06N w=2.4u l=600n as=3.6e-12 ad=3.6e-12 ps=7.8u \
+        pd=7.8u m=1 region=sat
+ends NMOS_IV_3
+// End of subcircuit definition.

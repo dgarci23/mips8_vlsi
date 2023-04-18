@@ -1,0 +1,66 @@
+// Default Spectre Simulation run title card.
+
+
+// Generated for: spectre
+// Generated on: Apr 18 11:49:56 2023
+// Design library name: hw2_dgarci23
+// Design cell name: sim_nand2
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+
+
+// Included Model Files
+
+include "$CDK_DIR/models/spectre/standalone/ami06N.m"
+
+include "$CDK_DIR/models/spectre/standalone/ami06P.m"
+
+
+
+// Library name: hw2_dgarci23
+// Cell name: nand2
+// View name: schematic
+subckt nand2 a b y
+    N1 (net19 a 0 0) ami06N w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    N0 (y b net19 0) ami06N w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    P1 (y b vdd! vdd!) ami06P w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    P0 (y a vdd! vdd!) ami06P w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    V3 (0 0) vsource type=dc dc=0
+    V2 (vdd! 0) vsource type=dc dc=5
+ends nand2
+// End of subcircuit definition.
+
+// Library name: hw2_dgarci23
+// Cell name: sim_nand2
+// View name: schematic
+I0 (A B AandB) nand2
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=200n delay=10n \
+        rise=500.0p fall=500.0p width=99.5n
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=100n delay=10n \
+        rise=500.0p fall=500.0p width=49.5n
+
+// Spectre Source Statements
+
+// Spectre Analyses and Output Options Statements
+
+// Output Options
+simOptions options
+//+      reltol = 1.00000000E-03
+//+      vabstol = 1.00000000E-06
+//+      iabstol = 1.00000000E-12
+//+      temp = 27
+//+      save = allpub
+//+      currents = selected
+
+// Analyses
+// dc1 dc oppoint=logfile homotopy=all
+tran1 tran start=0 stop=210n step=0.1n  errpreset=moderate
+
+
+
+// End of Netlist
