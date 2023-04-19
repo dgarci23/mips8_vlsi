@@ -1,0 +1,12 @@
+    N1 (net19 a 0 0) ami06N w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    N0 (y b net19 0) ami06N w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    P1 (y b vdd! vdd!) ami06P w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    P0 (y a vdd! vdd!) ami06P w=4.8u l=600n as=7.2e-12 ad=7.2e-12 ps=12.6u \
+        pd=12.6u m=1 region=sat
+    V3 (0 0) vsource type=dc dc=0
+    V2 (vdd! 0) vsource type=dc dc=5
+ends nand2
+// End of subcircuit definition.

@@ -1,0 +1,7 @@
+
+// Library name: lab2_dgarci23
+// Cell name: sim_inverter
+// View name: schematic
+I0 (net3 out) inv
+V0 (net3 0) vsource type=pulse val0=0 val1=5 period=100n rise=2.5n \
+        fall=2.5n width=47.5n

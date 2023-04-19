@@ -1,14 +1,42 @@
-t 4 in input
-t 3 out output
-n 1 vdd!
-n 0 gnd!
-n 3 /out
-n 4 /in
-; pmos4 Instance /I0/P0 = auLvs device Q0
+t 3 a input
+t 13 b input
+t 4 c input
+t 5 d input
+t 2 e input
+t 9 y output
+n 1 gnd!
+n 0 vdd!
+n 2 /e
+n 3 /a
+n 4 /c
+n 5 /d
+n 6 /net19
+n 7 /net18
+n 9 /y
+n 10 /net9
+n 12 /net20
+n 13 /b
+; pmos4 Instance /P4 = auLvs device Q0
 d pmos D G S B (p D S)
-i 0 pmos 3 4 1 1 " m 1 l 600e-9 w 4.8e-6 "
-; nmos4 Instance /I1/N0 = auLvs device Q1
+i 0 pmos 7 5 0 0 " m 1 l 600e-9 w 4.5e-6 "
+; pmos4 Instance /P3 = auLvs device Q1
+i 1 pmos 9 2 7 0 " m 1 l 600e-9 w 9e-6 "
+; pmos4 Instance /P2 = auLvs device Q2
+i 2 pmos 9 4 7 0 " m 1 l 600e-9 w 9e-6 "
+; pmos4 Instance /P1 = auLvs device Q3
+i 3 pmos 7 13 12 0 " m 1 l 600e-9 w 9e-6 "
+; pmos4 Instance /P0 = auLvs device Q4
+i 4 pmos 12 3 0 0 " m 1 l 600e-9 w 9e-6 "
+; nmos4 Instance /N4 = auLvs device Q5
 d nmos D G S B (p D S)
-i 1 nmos 3 4 0 0 " m 1 l 600e-9 w 2.4e-6 "
-t 0 gnd! global
-t 1 vdd! global
+i 5 nmos 6 4 1 1 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /N3 = auLvs device Q6
+i 6 nmos 9 2 6 1 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /N2 = auLvs device Q7
+i 7 nmos 10 13 1 1 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /N1 = auLvs device Q8
+i 8 nmos 10 3 1 1 " m 1 l 600e-9 w 3e-6 "
+; nmos4 Instance /N0 = auLvs device Q9
+i 9 nmos 9 5 10 1 " m 1 l 600e-9 w 3e-6 "
+t 0 vdd! global
+t 1 gnd! global

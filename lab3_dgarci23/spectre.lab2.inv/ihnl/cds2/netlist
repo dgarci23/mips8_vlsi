@@ -1,0 +1,6 @@
+    I0 (out in vdd!) PMOS_IV_3
+    I1 (out in 0) NMOS_IV_3
+    V1 (vdd! 0) vsource type=dc dc=5
+    V0 (0 0) vsource type=dc dc=0
+ends inv
+// End of subcircuit definition.

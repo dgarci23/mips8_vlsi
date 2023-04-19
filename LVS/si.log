@@ -6,16 +6,16 @@ Running simulation in directory: "/escnfs/courses/fa22-cse-40462.01/dropbox/dgar
 
 
 
-Begin netlist:    Apr 17 21:59:12 2023
+Begin netlist:    Apr 19 00:07:14 2023
 	view name list	= ("auLvs" "extracted")
 	stop name list	= ("auLvs")
-	library name	= "lab2_dgarci23"
-	cell name	= "inv"
+	library name	= "lab3_dgarci23"
+	cell name	= "adv_logic"
 	view name	= "extracted"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *WARNING* Parameter 'lxUseCell' already exists.
-End netlist:    Apr 17 21:59:12 2023
+End netlist:    Apr 19 00:07:16 2023
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -24,19 +24,19 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	4 nodes merged into 4 nodes
+	12 nodes merged into 12 nodes
 
 
-Begin netlist:    Apr 17 21:59:12 2023
+Begin netlist:    Apr 19 00:07:16 2023
 	view name list	= ("auLvs" "cmos_sch" "schematic" "symbol")
 	stop name list	= ("auLvs")
-	library name	= "lab2_dgarci23"
-	cell name	= "inv"
+	library name	= "lab3_dgarci23"
+	cell name	= "adv_logic"
 	view name	= "schematic"
 	globals lib	= "basic"
 Running Artist Flat Netlisting ...
 *INFO* (icLic-302) License Virtuoso_Layout_Suite_GXL ("Layout GXL") was used to run Layout L.
-End netlist:    Apr 17 21:59:13 2023
+End netlist:    Apr 19 00:07:16 2023
 
 Moving original netlist to extNetlist
 Removing parasitic components from netlist
@@ -45,10 +45,10 @@ Removing parasitic components from netlist
 	pinductors removed:  0
 	pdiodes removed:     0
 	trans lines removed: 0
-	5 nodes merged into 5 nodes
+	14 nodes merged into 14 nodes
 
 Running netlist comparison program:  LVS
-Begin comparison:    Apr 17 21:59:13 2023
+Begin comparison:    Apr 19 00:07:16 2023
 @(#)$CDS: LVS version 6.1.7-64b 12/16/2018 07:37 (sjfhw317) $
 
 The net-lists match.
@@ -59,22 +59,22 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  2       2      
-        total                   2       2      
+        active                  10      10     
+        total                   10      10     
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  4       4      
-        total                   4       4      
+        active                  12      12     
+        total                   12      12     
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   4       4      
-End comparison:      Apr 17 21:59:13 2023
+        total                   7       8      
+End comparison:      Apr 19 00:07:17 2023
 *INFO* (icLic-302) License Virtuoso_Layout_Suite_GXL ("Layout GXL") was used to run Layout L.
 
 
