@@ -1,0 +1,5 @@
+
+// Library name: lab4_dgarci23
+// Cell name: NMOS_IV_3
+// View name: schematic
+subckt NMOS_IV_3 D G S

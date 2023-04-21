@@ -1,0 +1,20 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sim_adv_logic"
+  repList "spectre cmos_sch schematic"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab3_dgarci23/spectre.lab3.adv_logic"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "lab3_dgarci23/sim_adv_logic/schematic" "sim_adv_logic" )
+( "lab3_dgarci23/adv_logic/schematic" "adv_logic" )
+ )
+( "sim_adv_logic" "ihnl/cds1/map" )
+( "adv_logic" "ihnl/cds0/map" )
+ )

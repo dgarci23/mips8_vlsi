@@ -1,0 +1,3 @@
+"lab4_dgarci23.PMOS_IV_3.schematic.termorder" (("D" "G" "S") ("D" "G" "S"))
+"lab4_dgarci23.NMOS_IV_3.schematic.termorder" (("D" "G" "S") ("D" "G" "S"))
+"lab4_dgarci23.inv.schematic.termorder" (("in" "out") ("in" "out"))

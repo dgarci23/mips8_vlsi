@@ -1,0 +1,11 @@
+CADENCE IHNL11140
+$model
+lab3_dgarci23/part2_circuit/schematic part2_circuit
+lab3_dgarci23/sim_part2_circuit/schematic sim_part2_circuit
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

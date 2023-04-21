@@ -1,0 +1,6 @@
+CADENCE IHNL11144
+
+lab4_dgarci23 NMOS_IV_3 schematic cds0
+lab4_dgarci23 PMOS_IV_3 schematic cds1
+lab4_dgarci23 inv schematic cds2
+lab4_dgarci23 ring_osc schematic cds3

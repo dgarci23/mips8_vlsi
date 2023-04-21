@@ -1,0 +1,4 @@
+    I1 (out in 0) NMOS_IV_3
+    I0 (out in vdd!) PMOS_IV_3
+ends inv
+// End of subcircuit definition.

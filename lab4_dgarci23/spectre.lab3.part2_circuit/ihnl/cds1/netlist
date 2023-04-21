@@ -1,0 +1,13 @@
+
+// Library name: lab3_dgarci23
+// Cell name: sim_part2_circuit
+// View name: schematic
+I0 (A B C D Y) part2_circuit
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=1u delay=15n rise=2.5n \
+        fall=2.5n width=497.5n
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=2u delay=15n rise=2.5n \
+        fall=2.5n width=997.5n
+V2 (C 0) vsource type=pulse val0=0 val1=5 period=4u delay=10n rise=2.5n \
+        fall=2.5n width=1.9975u
+V3 (D 0) vsource type=pulse val0=0 val1=5 period=8u delay=10n rise=2.5n \
+        fall=2.5n width=3.9975u

@@ -1,45 +1,14 @@
-t 7 a input
-t 6 b input
-t 5 c input
-t 4 d input
-t 3 gnd! inputOutput
-t 8 vdd! inputOutput
-t 9 y output
+t 2 D inputOutput
+t 1 G inputOutput
+t 0 S inputOutput
+t 3 vdd! inputOutput
 
-n 0 /10
-n 1 /9
-n 2 /8
-n 3 /gnd!
-n 4 /d
-n 5 /c
-n 6 /b
-n 7 /a
-n 8 /vdd!
-n 9 /y
+n 0 /S
+n 1 /G
+n 2 /D
+n 3 /vdd!
 
-; pmos4 Instance /+7 = auLvs device Q0
+; pmos4 Instance /+0 = auLvs device Q0
 d pmos D G S B (p D S)
-i 0 pmos 8 5 0 8 " m 1 l 600e-9 w 6e-6 "
-
-; pmos4 Instance /+6 = auLvs device Q1
-i 1 pmos 0 4 9 8 " m 1 l 600e-9 w 6e-6 "
-
-; pmos4 Instance /+5 = auLvs device Q2
-i 2 pmos 9 6 1 8 " m 1 l 600e-9 w 6e-6 "
-
-; pmos4 Instance /+4 = auLvs device Q3
-i 3 pmos 1 7 8 8 " m 1 l 600e-9 w 6e-6 "
-
-; nmos4 Instance /+3 = auLvs device Q4
-d nmos D G S B (p D S)
-i 4 nmos 2 5 9 3 " m 1 l 600e-9 w 3e-6 "
-
-; nmos4 Instance /+2 = auLvs device Q5
-i 5 nmos 9 4 2 3 " m 1 l 600e-9 w 3e-6 "
-
-; nmos4 Instance /+1 = auLvs device Q6
-i 6 nmos 2 6 3 3 " m 1 l 600e-9 w 3e-6 "
-
-; nmos4 Instance /+0 = auLvs device Q7
-i 7 nmos 3 7 2 3 " m 1 l 600e-9 w 3e-6 "
+i 0 pmos 2 1 0 3 " m 1 l 600e-9 w 1.5e-6 "
 

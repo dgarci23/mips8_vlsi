@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 17 22:08:55 2023
+// Design library name: lab2_dgarci23
+// Design cell name: sim_inverter
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!

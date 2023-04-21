@@ -1,0 +1,26 @@
+
+// Library name: lab4_dgarci23
+// Cell name: ring_osc
+// View name: schematic
+I20 (net07 net03) inv
+I19 (Out net04) inv
+I18 (net05 net06) inv
+I17 (net06 net07) inv
+I16 (net04 net05) inv
+I15 (net013 net08) inv
+I14 (net020 net010) inv
+I13 (net011 net012) inv
+I12 (net012 net013) inv
+I11 (net010 net011) inv
+I10 (net09 net014) inv
+I9 (net014 Out) inv
+I8 (net08 net09) inv
+I7 (net03 net015) inv
+I6 (net016 net017) inv
+I5 (net017 net3) inv
+I4 (net015 net016) inv
+I3 (net1 net019) inv
+I2 (net019 net020) inv
+I1 (net2 net1) inv
+I0 (net3 net2) inv
+V0 (vdd! 0) vsource type=dc dc=5

@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "ring_osc"
+  repList "spectre cmos_sch schematic"
+  stopList "spectre"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab4_dgarci23/spectre.lab4.ring_osc"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "lab4_dgarci23/ring_osc/schematic" "ring_osc" )
+( "lab4_dgarci23/inv/schematic" "inv" )
+( "lab4_dgarci23/NMOS_IV_3/schematic" "NMOS_IV_3" )
+( "lab4_dgarci23/PMOS_IV_3/schematic" "PMOS_IV_3" )
+ )
+( "NMOS_IV_3" "ihnl/cds0/map" )
+( "PMOS_IV_3" "ihnl/cds1/map" )
+( "ring_osc" "ihnl/cds3/map" )
+( "inv" "ihnl/cds2/map" )
+ )

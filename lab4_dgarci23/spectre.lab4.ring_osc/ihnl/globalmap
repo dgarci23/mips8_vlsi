@@ -1,0 +1,13 @@
+CADENCE IHNL11140
+$model
+lab4_dgarci23/PMOS_IV_3/schematic PMOS_IV_3
+lab4_dgarci23/ring_osc/schematic ring_osc
+lab4_dgarci23/NMOS_IV_3/schematic NMOS_IV_3
+lab4_dgarci23/inv/schematic inv
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

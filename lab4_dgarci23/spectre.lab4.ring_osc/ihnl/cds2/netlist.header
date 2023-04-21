@@ -1,0 +1,5 @@
+
+// Library name: lab4_dgarci23
+// Cell name: inv
+// View name: schematic
+subckt inv in out
