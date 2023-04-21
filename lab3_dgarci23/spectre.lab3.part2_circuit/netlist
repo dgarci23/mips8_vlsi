@@ -1,0 +1,38 @@
+
+// Library name: lab3_dgarci23
+// Cell name: part2_circuit
+// View name: schematic
+subckt part2_circuit a b c d y
+    P3 (y d net17 vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    P2 (y b net18 vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    P1 (net17 c vdd! vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    P0 (net18 a vdd! vdd!) ami06P w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u \
+        pd=15.0u m=1 region=sat
+    N3 (net7 b 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N2 (net7 a 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N1 (y d net7 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N0 (y c net7 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    V1 (0 0) vsource type=dc dc=0
+    V0 (vdd! 0) vsource type=dc dc=5
+ends part2_circuit
+// End of subcircuit definition.
+
+// Library name: lab3_dgarci23
+// Cell name: sim_part2_circuit
+// View name: schematic
+I0 (A B C D Y) part2_circuit
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=1u delay=15n rise=2.5n \
+        fall=2.5n width=497.5n
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=2u delay=15n rise=2.5n \
+        fall=2.5n width=997.5n
+V2 (C 0) vsource type=pulse val0=0 val1=5 period=4u delay=10n rise=2.5n \
+        fall=2.5n width=1.9975u
+V3 (D 0) vsource type=pulse val0=0 val1=5 period=8u delay=10n rise=2.5n \
+        fall=2.5n width=3.9975u

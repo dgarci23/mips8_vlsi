@@ -8,27 +8,27 @@ Compiling Diva LVS rules...
 
     Net-list summary for /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/LVS/layout/netlist
        count
-        12              nets
+        10              nets
         7               terminals
-        5               pmos
-        5               nmos
+        4               pmos
+        4               nmos
 
     Net-list summary for /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/LVS/schematic/netlist
        count
-        12              nets
-        8               terminals
-        5               pmos
-        5               nmos
+        10              nets
+        7               terminals
+        4               pmos
+        4               nmos
 
 
     Terminal correspondence points
-    N9        N3        a
-    N8        N13       b
-    N7        N4        c
-    N6        N5        d
-    N5        N2        e
-    N10       N0        vdd!
-    N11       N9        y
+    N7        N4        a
+    N6        N6        b
+    N5        N2        c
+    N4        N3        d
+    N3        N1        gnd!
+    N8        N0        vdd!
+    N9        N10       y
 
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
@@ -41,21 +41,21 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  10      10     
-        total                   10      10     
+        active                  8       8      
+        total                   8       8      
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  12      12     
-        total                   12      12     
+        active                  10      10     
+        total                   10      10     
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   7       8      
+        total                   7       7      
 
 
 Probe files from /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/LVS/schematic

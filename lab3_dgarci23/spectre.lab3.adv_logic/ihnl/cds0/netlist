@@ -1,0 +1,24 @@
+    P4 (net18 d vdd! vdd!) ami06P w=4.5u l=600n as=6.75e-12 ad=6.75e-12 \
+        ps=12.0u pd=12.0u m=1 region=sat
+    P3 (y e net18 vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    P2 (y c net18 vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    P1 (net18 b net20 vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    P0 (net20 a vdd! vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    N4 (net19 c 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N3 (y e net19 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N2 (net9 b 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N1 (net9 a 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N0 (y d net9 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    V1 (vdd! 0) vsource type=dc dc=5
+    V0 (0 0) vsource type=dc dc=0
+ends adv_logic
+// End of subcircuit definition.

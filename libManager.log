@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.7 - CAT35 10/30/2018 21:08 (sjfnl050) $
 \o Sub version:		sub-version  s231 
-\o Arguments:		-mpssession virtuoso23462 -mpshost student06.cse.nd.edu 
+\o Arguments:		-mpssession virtuoso15390 -mpshost student06.cse.nd.edu 
 \o Working Directory:	student06.cse.nd.edu:/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8
 \o 64-bit offsets
 \o Qt version: 		4.8.5
@@ -14,90 +14,73 @@
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
-\o MPS service: map window
-\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1 31 766 376))
 \a nrResizeWindow(cdsLibManager list(1 31 766 784))
-\a cdsLibManager->cdkCreateNewLib->value = t
-\a cdsLibManager->cdkCreateNewLib->value = t ; customval
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "hw2_dgarci23"
-\a cdsLibManager->libLineEdit->value = "hw2_dgarci23"
-\a lmgrLogShowPopup("mainListPopup0" 15 247 2 "hw2_dgarci23")
-\a cdsLibManager->copySimpleButton->value = t
-\a basicCopyForm->CategoryCellsEdit->value = "*"
-\a basicCopyForm->CellsSkipLibraries->value = t
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->ViewsSkipLibraries->value = t
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CopyFromLibrary->value = "NCSU_Analog_Parts"
-\a basicCopyForm->CopyToLibrary->value = "NCSU_Analog_Parts"
-\a basicCopyForm->CopyFromLibrary->value = "hw2_dgarci23"
-\a basicCopyForm->CopyToLibrary->value = "hw2_dgarci23"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "NCSU_Analog_Parts NCSU_Digital_Parts NCSU_TechLib_ami06 NCSU_TechLib_ami16 NCSU_TechLib_hp06 NCSU_TechLib_tsmc02 NCSU_TechLib_tsmc02d NCSU_TechLib_tsmc03 NCSU_TechLib_tsmc03d NCSU_TechLib_tsmc04_4M2P analogLib basic cdsDefTechLib functional lab1_dgarci23 lab2_dgarci23 sbaLib"
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "NCSU_Analog_Parts NCSU_Digital_Parts NCSU_TechLib_ami06 NCSU_TechLib_ami16 NCSU_TechLib_hp06 NCSU_TechLib_tsmc02 NCSU_TechLib_tsmc02d NCSU_TechLib_tsmc03 NCSU_TechLib_tsmc03d NCSU_TechLib_tsmc04_4M2P analogLib basic cdsDefTechLib functional lab1_dgarci23 lab2_dgarci23 sbaLib"
-\a nrSetWindowVisibility(basicCopyForm "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(226 226 303 367))
-\a basicCopyForm->UpdateInstances->value = t
-\a basicCopyForm->CopyToLibrary->value = "lab3_dgarci23"
-\a basicCopyForm->OK->value = t
-\o Beginning simple copy to library "lab3_dgarci23".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a NewLibShell->newLibNameText->value = "lab3_dgarci23"
-\o INFO (CLM-130): Your operation specified a new destination library.\n\nThis dialog requires you to specify the location where \nthe new library's directory will be created when OK'd.\n\nYou will not create a new library if this dialog is cancelled.
-\a nrSetWindowVisibility(NewLibShell "show")
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrSetCurrentWindow(NewLibShell)
-\a nrSetCurrentWindow(NewLibShell->subDialog)
-\a NewLibShell->QLineEdit2->value = "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/"
-\a nrResizeWindow(workingDialogForm list(246 348 273 133))
-\a nrResizeWindow(NewLibShell->subDialog list(0 0 459 273))
-\a nrResizeWindow(NewLibShell list(129 69 507 690))
-\a NewLibShell->newLibNameText->value = "lab3_dgarci23"
-\a nrDialogAccept(NewLibShell)
-\a NewLibShell->newLibOKButton->value = t
-\a NewLibShell->subDialog->value = '("/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8" "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/")
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\o Created new library "lab3_dgarci23" at /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab3_dgarci23.
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(NewLibShell)
-\a nrSetCurrentWindow(basicCopyForm)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(workingDialogForm)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "hw2_dgarci23"
-\a cdsLibManager->libLineEdit->value = "hw2_dgarci23"
-\a nrResizeWindow(workingDialogForm list(219 343 327 143))
-\o Batching session updates...
-\o Batching session updates...
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "hw2_dgarci23"
-\a cdsLibManager->libLineEdit->value = "hw2_dgarci23"
-\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "lab3_dgarci23"
 \a cdsLibManager->libLineEdit->value = "lab3_dgarci23"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->FileNewCVButton->value = t
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "lab3_dgarci23"
 \a cdsLibManager->libLineEdit->value = "lab3_dgarci23"
+\a cdsLibManager->cellListBox->value = "part2_circuit"
+\a cdsLibManager->cellLineEdit->value = "part2_circuit"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "adv_logic"
-\a cdsLibManager->cellLineEdit->value = "adv_logic"
 \a cdsLibManager->viewListBox->value = "extracted"
 \a cdsLibManager->viewLineEdit->value = "extracted"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->fileExitButton->value = t
+\a lmgrLogShowPopup("mainListPopup2" 44 12 2 "extracted")
+\a lmgrLogShowPopup("mainListPopup2" 31 8 2 "extracted")
+\a cdsLibManager->fileOpenWithButton->value = t
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "lab3_dgarci23"
+\a cdsLibManager->libLineEdit->value = "lab3_dgarci23"
+\a cdsLibManager->cellListBox->value = "part2_circuit"
+\a cdsLibManager->cellLineEdit->value = "part2_circuit"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "sim_inverter"
+\a cdsLibManager->cellLineEdit->value = "sim_inverter"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "sim_adv_logic"
+\a cdsLibManager->cellLineEdit->value = "sim_adv_logic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\o MPS service: shutdown
 \o libManager is exiting.
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a exit(0)

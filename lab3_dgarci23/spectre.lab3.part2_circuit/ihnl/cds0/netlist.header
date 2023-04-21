@@ -1,0 +1,5 @@
+
+// Library name: lab3_dgarci23
+// Cell name: part2_circuit
+// View name: schematic
+subckt part2_circuit a b c d y

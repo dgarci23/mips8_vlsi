@@ -1,0 +1,84 @@
+// Default Spectre Simulation run title card.
+
+
+// Generated for: spectre
+// Generated on: Apr 20 19:32:33 2023
+// Design library name: lab3_dgarci23
+// Design cell name: sim_adv_logic
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
+
+
+// Included Model Files
+
+include "$CDK_DIR/models/spectre/standalone/ami06N.m"
+
+include "$CDK_DIR/models/spectre/standalone/ami06P.m"
+
+
+
+// Library name: lab3_dgarci23
+// Cell name: adv_logic
+// View name: schematic
+subckt adv_logic a b c d e y
+    P4 (net18 d vdd! vdd!) ami06P w=4.5u l=600n as=6.75e-12 ad=6.75e-12 \
+        ps=12.0u pd=12.0u m=1 region=sat
+    P3 (y e net18 vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    P2 (y c net18 vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    P1 (net18 b net20 vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    P0 (net20 a vdd! vdd!) ami06P w=9u l=600n as=1.35e-11 ad=1.35e-11 \
+        ps=21.0u pd=21.0u m=1 region=sat
+    N4 (net19 c 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N3 (y e net19 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N2 (net9 b 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N1 (net9 a 0 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    N0 (y d net9 0) ami06N w=3u l=600n as=4.5e-12 ad=4.5e-12 ps=9u pd=9u \
+        m=1 region=sat
+    V1 (vdd! 0) vsource type=dc dc=5
+    V0 (0 0) vsource type=dc dc=0
+ends adv_logic
+// End of subcircuit definition.
+
+// Library name: lab3_dgarci23
+// Cell name: sim_adv_logic
+// View name: schematic
+I0 (A B C D E Y) adv_logic
+V4 (E 0) vsource type=pulse val0=0 val1=5 period=16u delay=15n rise=2.5n \
+        fall=500.0p width=7.9975u
+V3 (D 0) vsource type=pulse val0=0 val1=5 period=8u delay=10n rise=2.5n \
+        fall=2.5n width=3.9975u
+V2 (C 0) vsource type=pulse val0=0 val1=5 period=4u delay=15n rise=2.5n \
+        fall=2.5n width=1.9975u
+V1 (B 0) vsource type=pulse val0=0 val1=5 period=2u delay=12.5n rise=2.5n \
+        fall=2.5n width=997.5n
+V0 (A 0) vsource type=pulse val0=0 val1=5 period=1u delay=10n rise=2.5n \
+        fall=2.5n width=497.5n
+
+// Spectre Source Statements
+
+// Spectre Analyses and Output Options Statements
+
+// Output Options
+simOptions options
+//+      reltol = 1.00000000E-03
+//+      vabstol = 1.00000000E-06
+//+      iabstol = 1.00000000E-12
+//+      temp = 27
+//+      save = allpub
+//+      currents = selected
+
+// Analyses
+// dc1 dc oppoint=logfile homotopy=all
+tran1 tran start=0 stop=17u step=0.1n errpreset=moderate
+
+
+
+// End of Netlist
