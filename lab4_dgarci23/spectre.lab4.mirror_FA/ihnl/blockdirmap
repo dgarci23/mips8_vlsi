@@ -1,0 +1,8 @@
+CADENCE IHNL11146
+
+lab4_dgarci23 pmos_81 schematic cds0
+lab4_dgarci23 pmos_11 schematic cds1
+lab4_dgarci23 nmos_41 schematic cds2
+lab4_dgarci23 nmos_11 schematic cds3
+lab4_dgarci23 mirror_FA schematic cds4
+lab4_dgarci23 sim_mirror_FA schematic cds5

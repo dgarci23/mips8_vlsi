@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "sim_mirror_FA"
+  repList "spectre cmos_sch schematic"
+  stopList "spectre"
+  globalList "vdd! gnd!"
+  hierDelim "."
+  netlistDir "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/lab4_dgarci23/spectre.lab4.mirror_FA"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "lab4_dgarci23/pmos_81/schematic" "pmos_81" )
+( "lab4_dgarci23/nmos_11/schematic" "nmos_11" )
+( "lab4_dgarci23/pmos_11/schematic" "pmos_11" )
+( "lab4_dgarci23/sim_mirror_FA/schematic" "sim_mirror_FA" )
+( "lab4_dgarci23/mirror_FA/schematic" "mirror_FA" )
+( "lab4_dgarci23/nmos_41/schematic" "nmos_41" )
+ )
+( "pmos_11" "ihnl/cds1/map" )
+( "mirror_FA" "ihnl/cds4/map" )
+( "pmos_81" "ihnl/cds0/map" )
+( "nmos_41" "ihnl/cds2/map" )
+( "nmos_11" "ihnl/cds3/map" )
+( "sim_mirror_FA" "ihnl/cds5/map" )
+ )

@@ -1,0 +1,81 @@
+
+// Library name: lab4_dgarci23
+// Cell name: pmos_81
+// View name: schematic
+subckt pmos_81 D G S
+    P0 (D G S vdd!) ami06P w=12.0u l=600n as=1.8e-11 ad=1.8e-11 ps=27.0u \
+        pd=27.0u m=1 region=sat
+ends pmos_81
+// End of subcircuit definition.
+
+// Library name: lab4_dgarci23
+// Cell name: pmos_11
+// View name: schematic
+subckt pmos_11 D G S
+    P0 (D G S vdd!) ami06P w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u \
+        pd=6u m=1 region=sat
+ends pmos_11
+// End of subcircuit definition.
+
+// Library name: lab4_dgarci23
+// Cell name: nmos_41
+// View name: schematic
+subckt nmos_41 D G S
+    N0 (D G S 0) ami06N w=6u l=600n as=9e-12 ad=9e-12 ps=15.0u pd=15.0u \
+        m=1 region=sat
+ends nmos_41
+// End of subcircuit definition.
+
+// Library name: lab4_dgarci23
+// Cell name: nmos_11
+// View name: schematic
+subckt nmos_11 D G S
+    N0 (D G S 0) ami06N w=1.5u l=600n as=2.25e-12 ad=2.25e-12 ps=6u pd=6u \
+        m=1 region=sat
+ends nmos_11
+// End of subcircuit definition.
+
+// Library name: lab4_dgarci23
+// Cell name: mirror_FA
+// View name: schematic
+subckt mirror_FA A B C CoutNeg SumNeg
+    I2 (CoutNeg C net6) pmos_81
+    I1 (net6 B vdd!) pmos_81
+    I0 (net6 A vdd!) pmos_81
+    I25 (net14 C vdd!) pmos_11
+    I24 (net16 B net14) pmos_11
+    I21 (SumNeg A net16) pmos_11
+    I15 (net11 C vdd!) pmos_11
+    I14 (net11 B vdd!) pmos_11
+    I11 (SumNeg CoutNeg net11) pmos_11
+    I10 (net11 A vdd!) pmos_11
+    I4 (CoutNeg A net13) pmos_11
+    I3 (net13 B vdd!) pmos_11
+    I7 (net5 B 0) nmos_41
+    I6 (net5 A 0) nmos_41
+    I5 (CoutNeg C net5) nmos_41
+    I23 (net17 C 0) nmos_11
+    I22 (net15 B net17) nmos_11
+    I18 (SumNeg A net15) nmos_11
+    I17 (net10 C 0) nmos_11
+    I16 (net10 B 0) nmos_11
+    I13 (net10 A 0) nmos_11
+    I12 (SumNeg CoutNeg net10) nmos_11
+    I9 (net017 B 0) nmos_11
+    I8 (CoutNeg A net017) nmos_11
+    V0 (vdd! 0) vsource type=dc dc=5
+ends mirror_FA
+// End of subcircuit definition.
+
+// Library name: lab4_dgarci23
+// Cell name: sim_mirror_FA
+// View name: schematic
+I0 (A0 B0 Cin0 Count0Neg Sum0Neg) mirror_FA
+V2 (Cin0 0) vsource type=pulse val0=0 val1=5 period=4u delay=10n rise=2.5n \
+        fall=2.5n width=1.9975u
+V1 (B0 0) vsource type=pulse val0=0 val1=5 period=2u delay=10n rise=2.5n \
+        fall=2.5n width=997.5n
+V0 (A0 0) vsource type=pulse val0=0 val1=5 period=1us delay=10n rise=2.5n \
+        fall=2.5n width=497.5n
+C1 (Sum0Neg 0) capacitor c=140f m=1
+C0 (Count0Neg 0) capacitor c=140f m=1

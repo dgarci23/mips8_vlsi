@@ -1,0 +1,5 @@
+
+// Library name: lab4_dgarci23
+// Cell name: mirror_FA
+// View name: schematic
+subckt mirror_FA A B C CoutNeg SumNeg

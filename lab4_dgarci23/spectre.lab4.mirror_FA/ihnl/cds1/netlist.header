@@ -1,0 +1,5 @@
+
+// Library name: lab4_dgarci23
+// Cell name: pmos_11
+// View name: schematic
+subckt pmos_11 D G S

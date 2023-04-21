@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Apr 21 15:41:23 2023
+// Design library name: lab4_dgarci23
+// Design cell name: sim_mirror_FA
+// Design view name: schematic
+simulator lang=spectre
+global 0 vdd!
