@@ -131,3 +131,164 @@ To explore the layout tools of Virtuoso we created our own standard cells for an
 |:--:|:--:| 
 | *Layout* | *Extracted* |
 
+## Creating a Ring Oscillator
+
+| ![](docs/lab4/ring_osc_sch.png) | 
+|:--:| 
+| *Ring Oscillator Schematic* |
+
+| ![](docs/lab4/ring_osc_waveforms.png) | 
+|:--:| 
+| *Ring Oscillator Waveforms* |
+
+| ![](docs/lab4/ring_osc_lay.png) | 
+|:--:| 
+| *Ring Oscillator Layout* |
+
+| ![](docs/lab4/ring_osc_ext.png) | 
+|:--:| 
+| *Ring Oscillator Extract* |
+
+## Creating a Full Adder
+
+### PMOS and NMOS cells
+
+| PMOS 81 | PMOS 11 | NMOS 41 | NMOS 11 |
+|:--:|:--:|:--:|:--:| 
+| ![](docs/lab4/pmos_81_sch.png) | ![](docs/lab4/pmos_11_sch.png) | ![](docs/lab4/nmos_41_sch.png) | ![](docs/lab4/nmos_11_sch.png) |
+| ![](docs/lab4/pmos_81_sym.png) | ![](docs/lab4/pmos_11_sym.png) | ![](docs/lab4/nmos_41_sym.png) | ![](docs/lab4/nmos_11_sym.png) | 
+| ![](docs/lab4/pmos_81_lay.png) | ![](docs/lab4/pmos_11_lay.png) | ![](docs/lab4/nmos_41_lay.png) | ![](docs/lab4/nmos_11_lay.png) |
+| ![](docs/lab4/pmos_81_ext.png) | ![](docs/lab4/pmos_11_ext.png) | ![](docs/lab4/nmos_41_ext.png) | ![](docs/lab4/nmos_11_ext.png) |
+
+### Putting it all together
+
+| ![](docs/lab4/mirror_FA_sch.png) | 
+|:--:| 
+| *Full Adder Schematic* |
+
+| ![](docs/lab4/mirror_FA_sym.png) | 
+|:--:| 
+| *Full Adder Symbol Waveforms* |
+
+| ![](docs/lab4/sim_mirror_FA_sch.png) | 
+|:--:| 
+| *Full Adder Simulation Schematic* |
+
+| ![](docs/lab4/sim_mirror_FA_waveforms.png) | 
+|:--:| 
+| *Full Adder Waveforms* |
+
+| ![](docs/lab4/mirror_FA_lay.png) | 
+|:--:| 
+| *Full Adder Layout* |
+
+| ![](docs/lab4/mirror_FA_ext.png) | 
+|:--:| 
+| *Full Adder Extract* |
+
+## Controller and Dapapath Design
+
+### HDL for the 8 bit processor
+
+| ![](docs/lab5/sv_testbench_waveforms.png) | 
+|:--:| 
+| *SystemVerilog Testbench Results* |
+
+| ![](docs/lab5/dut_netlist.png) | 
+|:--:| 
+| *DUT Netlist* |
+
+| ![](docs/lab5/processor_netlist.png) | 
+|:--:| 
+| *Processor Netlist* |
+
+| ![](docs/lab5/controller_netlist.png) | 
+|:--:| 
+| *Controller Netlist* |
+
+| ![](docs/lab5/top_level_netlist.png) | 
+|:--:| 
+| *DUT Netlist Expanded* |
+
+
+### Working on wide AND and OR gates
+
+| ![](docs/lab5/and2_1x_8_sch.png) | ![](docs/lab5/or2_1x_8_sch.png) |
+| :--: | :--: |
+| ![](docs/lab5/and2_1x_8_sym.png) | ![](docs/lab5/or2_1x_8_sym.png) |
+| ![](docs/lab5/and2_1x_8_lay.png) | ![](docs/lab5/or2_1x_8_lay.png) |
+| ![](docs/lab5/and2_1x_8_ext.png) | ![](docs/lab5/or2_1x_8_ext.png) |
+
+### ALU Design
+
+| ![](docs/lab5/alu_sch.png) | 
+|:--:| 
+| *ALU Schematic* |
+
+| ![](docs/lab5/alu_sym.png) | 
+|:--:| 
+| *ALU Waveforms* |
+
+| ![](docs/lab5/alu_lay.png) | 
+|:--:| 
+| *ALU Layout* |
+
+| ![](docs/lab5/alu_ext.png) | 
+|:--:| 
+| *ALU Extract* |
+
+### Datapath
+
+| ![](docs/lab5/datapath_sch.png) | 
+|:--:| 
+| *Datapath Schematic* |
+
+| ![](docs/lab5/datapath_sym.png) | 
+|:--:| 
+| *Datapath Symbol* |
+
+| ![](docs/lab5/datapath_lay.png) | 
+|:--:| alu
+| *Datapath Layout* |
+
+| ![](docs/lab5/datapath_ext.png) | 
+|:--:| 
+| *Datapath Extract* |
+
+### ALU Decoder
+
+| ![](docs/lab6/aludecoder_sch.png) | 
+|:--:| 
+| *ALU Decoder Schematic* |
+
+| ![](docs/lab6/aludecoder_sym.png) | 
+|:--:| 
+| *ALU Decoder Symbol* |
+
+| ![](docs/lab6/aludecoder_lay.png) | 
+|:--:| 
+| *ALU Decoder Layout* |
+
+| ![](docs/lab6/aludecoder_ext.png) | 
+|:--:| 
+| *ALU Decoder Extract* |
+
+### Controller (using Innovus)
+
+| ![](docs/lab6/controller_innovus_floorplan.png) | 
+|:--:| 
+| *Controller Floorplan* |
+
+### Full Chip
+
+| ![](docs/lab6/chip_sch.png) | 
+|:--:| 
+| *Chip Schematic* |
+
+| ![](docs/lab7/chip_lay.png) | 
+|:--:| 
+| *Chip Layout* |
+
+| ![](docs/lab7/chip_ext.png) | 
+|:--:| 
+| *Chip Extract* |
