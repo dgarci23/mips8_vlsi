@@ -1,0 +1,81 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
+\o Sub version:		sub-version  s231 
+\o Arguments:		-display localhost:10.0 -mpssession virtuoso22173 -mpshost student06.cse.nd.edu -namespace CDBA -cdslib /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/cds.lib 
+\o Working Directory:	student06.cse.nd.edu:/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "basic"
+\a nrResizeWindow(cdsLibEditor list(164 187 500 400))
+\a nrResizeWindow(cdsLibEditor list(2124 146 500 400))
+\a cdsLibEditor->editAddLibButton->value = t
+\a newLibraryDialog->filePathComboBox->value = "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8"
+\a newLibraryDialog->useMappedName->value = nil
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(2102 76 541 523))
+\a newLibraryDialog->libraryListBox->value = "wordlib8"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "wordlib8"
+\a newLibraryDialog->okButton->value = t
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 25 0)
+\o Active cell: 25 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(2097 71 551 533))
+\a newLibraryDialog->libraryListBox->value = "muddlib11"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "muddlib11"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 25 0 "muddlib11")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 26 0)
+\o Active cell: 26 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(2092 66 561 543))
+\a newLibraryDialog->libraryListBox->value = "processor8"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "processor8"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 26 0 "processor8")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 27 0)
+\o Active cell: 27 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->editAddLibButton->value = t
+\a nrSetWindowVisibility(newLibraryDialog "show")
+\a nrSetCurrentWindow(newLibraryDialog)
+\a nrResizeWindow(newLibraryDialog list(2087 61 571 553))
+\a newLibraryDialog->dirListWidget->value = "oa"
+\a newLibraryDialog->filePathComboBox->value = "/escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/oa"
+\a nrListItemAction(newLibraryDialog->dirListWidget 2 0)
+\a newLibraryDialog->dirListWidget->value = nil
+\a newLibraryDialog->libraryListBox->value = "HMC_Sheets_8ths"
+\a newLibraryDialog->useMappedName->value = t
+\a newLibraryDialog->libraryName->value = "HMC_Sheets_8ths"
+\a newLibraryDialog->okButton->value = t
+\a nrListItemRename(cdsLibEditor->mainTable, 27 0 "HMC_Sheets_8ths")
+\a newLibraryDialog->libraryListBox->value = nil
+\a newLibraryDialog->useMappedName->value = nil
+\a newLibraryDialog->libraryName->value = ""
+\a nrListItemAction(cdsLibEditor->mainTable 28 0)
+\o Active cell: 28 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a cdsLibEditor->fileSaveButton->value = t
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)

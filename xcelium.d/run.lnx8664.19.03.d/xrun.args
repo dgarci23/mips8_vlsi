@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+processor_multi.sv
+-gui
+-access
+rwc
+-coverage
+ALL
+-covoverwrite

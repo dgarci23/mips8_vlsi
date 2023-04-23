@@ -8,27 +8,46 @@ Compiling Diva LVS rules...
 
     Net-list summary for /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/LVS/layout/netlist
        count
-        16              nets
-        7               terminals
-        12              pmos
-        12              nmos
+        42              nets
+        26              terminals
+        24              pmos
+        24              nmos
 
     Net-list summary for /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/LVS/schematic/netlist
        count
-        16              nets
-        7               terminals
-        12              pmos
-        12              nmos
+        42              nets
+        26              terminals
+        24              pmos
+        24              nmos
 
 
     Terminal correspondence points
-    N2        N17       A
-    N3        N16       B
-    N5        N15       C
-    N4        N3        CoutNeg
-    N10       N7        SumNeg
-    N7        N1        gnd!
-    N0        N0        vdd!
+    N24       N9        a<0>
+    N21       N8        a<1>
+    N17       N7        a<2>
+    N40       N6        a<3>
+    N37       N5        a<4>
+    N35       N4        a<5>
+    N32       N3        a<6>
+    N29       N2        a<7>
+    N38       N17       b<0>
+    N36       N16       b<1>
+    N33       N15       b<2>
+    N30       N14       b<3>
+    N26       N13       b<4>
+    N23       N12       b<5>
+    N20       N11       b<6>
+    N16       N10       b<7>
+    N19       N1        gnd!
+    N28       N0        vdd!
+    N34       N25       y<0>
+    N31       N24       y<1>
+    N27       N23       y<2>
+    N25       N22       y<3>
+    N22       N21       y<4>
+    N18       N20       y<5>
+    N41       N18       y<6>
+    N39       N19       y<7>
 
 Devices in the rules but not in the netlist:
         cap nfet pfet nmos4 pmos4
@@ -41,21 +60,21 @@ The net-lists match.
         rewired                 0       0      
         size errors             0       0      
         pruned                  0       0      
-        active                  24      24     
-        total                   24      24     
+        active                  48      48     
+        total                   48      48     
 
                                   nets
         un-matched              0       0      
         merged                  0       0      
         pruned                  0       0      
-        active                  16      16     
-        total                   16      16     
+        active                  42      42     
+        total                   42      42     
 
                                 terminals
         un-matched              0       0      
         matched but
         different type          0       0      
-        total                   7       7      
+        total                   26      26     
 
 
 Probe files from /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/LVS/schematic

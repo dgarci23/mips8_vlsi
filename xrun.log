@@ -1,0 +1,248 @@
+xrun(64): 19.03-s013: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	19.03-s013: Started on Apr 21, 2023 at 17:54:10 EDT
+xrun
+	processor_multi.sv
+	-gui
+	-access rwc
+	-coverage ALL
+	-covoverwrite
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmvlog: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+file: processor_multi.sv
+	module worklib.testbench:sv
+		errors: 0, warnings: 0
+	module worklib.top:sv
+		errors: 0, warnings: 0
+	module worklib.mem:sv
+		errors: 0, warnings: 0
+	module worklib.processor:sv
+		errors: 0, warnings: 0
+	module worklib.aludecoder:sv
+		errors: 0, warnings: 0
+	module worklib.controller:sv
+		errors: 0, warnings: 0
+	module worklib.decoder:sv
+		errors: 0, warnings: 0
+	module worklib.mainfsm:sv
+		errors: 0, warnings: 0
+	module worklib.condlogic:sv
+		errors: 0, warnings: 0
+	module worklib.condcheck:sv
+		errors: 0, warnings: 0
+	module worklib.datapath:sv
+		errors: 0, warnings: 0
+	module worklib.regfile:sv
+		errors: 0, warnings: 0
+	module worklib.extend:sv
+		errors: 0, warnings: 0
+	module worklib.adder:sv
+		errors: 0, warnings: 0
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+	module worklib.flopenr:sv
+		errors: 0, warnings: 0
+	module worklib.flopr:sv
+		errors: 0, warnings: 0
+	module worklib.flopen:sv
+		errors: 0, warnings: 0
+	module worklib.flop:sv
+		errors: 0, warnings: 0
+	module worklib.latch:sv
+		errors: 0, warnings: 0
+	module worklib.mux2:sv
+		errors: 0, warnings: 0
+	module worklib.mux3:sv
+		errors: 0, warnings: 0
+	module worklib.mux4:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xrun: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmelab: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench
+		adder
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.aludecoder
+		worklib.mux2
+		worklib.latch
+		worklib.flop
+		worklib.flopr
+		worklib.mainfsm
+		worklib.decoder
+		worklib.mux3
+		worklib.flopenr
+		worklib.condcheck
+		worklib.condlogic
+		worklib.controller
+		worklib.flopen
+		worklib.regfile
+		worklib.extend
+		worklib.mux4
+		worklib.alu
+		worklib.datapath
+		worklib.processor
+		worklib.mem
+		worklib.top
+		worklib.testbench
+		worklib.adder
+	Total FSMs extracted = 0
+	Building instance overlay tables: ...................
+      $readmemh("memfile.dat", mem);
+                                 |
+xmelab: *W,MEMODR (./processor_multi.sv,139|33): $readmem default memory order incompatible with IEEE1364.
+. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmvlog_cg: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+		worklib.adder:sv <0x5606c02b>
+			streams:   1, words:   289
+		worklib.mem:sv <0x231c0b2f>
+			streams:  10, words:  7474
+		worklib.mux3:sv <0x0300a516>
+			streams:   1, words:   552
+		worklib.alu:sv <0x7564605d>
+			streams:   6, words:  3870
+		worklib.mux4:sv <0x168c81a1>
+			streams:   1, words:   662
+		worklib.extend:sv <0x6fa827c9>
+			streams:   2, words:   687
+		worklib.regfile:sv <0x4a6ed075>
+			streams:  12, words:  4950
+		worklib.mux2:sv <0x69a25877>
+			streams:   1, words:   411
+		worklib.flopen:sv <0x66d8c8d1>
+			streams:   4, words:  1282
+		worklib.mux2:sv <0x798a8567>
+			streams:   1, words:   417
+		worklib.latch:sv <0x7c1fff6d>
+			streams:   2, words:   643
+		worklib.flop:sv <0x240f15ab>
+			streams:   3, words:  1150
+		worklib.mux3:sv <0x36e38054>
+			streams:   1, words:   506
+		worklib.flopenr:sv <0x269108e0>
+			streams:   6, words:  1948
+		worklib.datapath:sv <0x78403ceb>
+			streams:  44, words: 15668
+		worklib.mux2:sv <0x6e2671d3>
+			streams:   1, words:   429
+		worklib.flopr:sv <0x0cc78e35>
+			streams:   5, words:  1832
+		worklib.condcheck:sv <0x5f86470b>
+			streams:   2, words:  3898
+		worklib.latch:sv <0x5f63f7f0>
+			streams:   2, words:   658
+		worklib.flop:sv <0x20a99dc9>
+			streams:   3, words:  1163
+		worklib.mux3:sv <0x1a8d5171>
+			streams:   1, words:   518
+		worklib.flopenr:sv <0x7a1782b8>
+			streams:   6, words:  1961
+		worklib.condlogic:sv <0x1d4b156d>
+			streams:  12, words:  4902
+		worklib.latch:sv <0x43685dfb>
+			streams:   2, words:   637
+		worklib.flop:sv <0x61376686>
+			streams:   3, words:  1138
+		worklib.mux2:sv <0x258c9272>
+			streams:   1, words:   411
+		worklib.flopr:sv <0x360f60ae>
+			streams:   5, words:  1807
+		worklib.mainfsm:sv <0x19a92b50>
+			streams:   5, words: 16073
+		worklib.decoder:sv <0x25c2fe24>
+			streams:  14, words:  7767
+		worklib.controller:sv <0x12999a93>
+			streams:  19, words:  8962
+		worklib.aludecoder:sv <0x6dcb2ebf>
+			streams:   1, words:  3443
+		worklib.processor:sv <0x0134b200>
+			streams:  36, words: 12085
+		worklib.top:sv <0x34ce5c67>
+			streams:   8, words:  2713
+		worklib.testbench:sv <0x4fb5a0cc>
+			streams:  10, words:  6971
+  logic [7:0] rf[6:0];
+               |
+xmelab: *W,COVMDD (./processor_multi.sv,441|15): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                   Instances  Unique
+		Modules:                  81      23
+		Registers:               217     138
+		Scalar wires:            143       -
+		Expanded wires:           15       4
+		Vectored wires:          258       -
+		Always blocks:            36      11
+		Initial blocks:            2       2
+		Cont. assignments:        49      31
+		Pseudo assignments:      216     169
+		Simulation timescale:  100ps
+	Writing initial simulation snapshot: worklib.testbench:sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+xmsim: *W,DLCVAR (./cds.lib,3): cds.lib Invalid environment variable ''.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /escnfs/home/csesoft/cadence/installs/XCELIUM1903/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm testbench.DataAdr testbench.MemWrite testbench.WriteData testbench.ph1 testbench.ph2 testbench.reset
+Created probe 1
+xcelium> reset
+xmsim: *W,C58RST: Reset command executed. Coverage is enabled for the subsequent simulation run.  The coverage test name needs to be changed to prevent data overwrite, and any coverage control commands previously used must be reissued.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loaded snapshot worklib.testbench:sv
+xcelium> run
+Simulation succeeded
+Simulation complete via $finish(1) at time 1326 NS + 0
+./processor_multi.sv:107           $finish;
+xcelium> ^C
+xcelium> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  testbench(testbench)
+  dutinst  :  adder(adder)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_4c1de99b_00000000.ucm
+  data               :  ./cov_work/scope/test/icc_4c1de99b_00000000.ucd
+TOOL:	xrun(64)	19.03-s013: Exiting on Apr 21, 2023 at 18:08:23 EDT  (total: 00:14:13)

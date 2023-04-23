@@ -1,0 +1,1 @@
+s1(21Apr2023:17:54:11):  xrun processor_multi.sv -gui -access rwc -coverage ALL -covoverwrite 
