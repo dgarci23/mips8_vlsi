@@ -77,19 +77,19 @@ To explore the layout tools of Virtuoso we created our own standard cells for an
 
 ## Layout Next Step: 2 input NAND gate
 
-| ![](docs/lab3/nand2_sch.png) | 
+| ![](docs/hw2/nand2_sch.png) | 
 |:--:| 
 | *NAND schematic* |
 
-| ![](docs/lab3/nand2_sym.png) |
+| ![](docs/hw2/nand2_sym.png) |
 |:--:| 
 | *NAND symbol* |
 
-| ![](docs/lab3/nand2_waveforms.png) |
+| ![](docs/hw2/nand2_waveforms.png) |
 |:--:| 
 | *NAND Waveforms* |
 
-| ![](docs/lab3/nand2_lay.png) | ![](docs/lab3/nand2_ext.png) |
+| ![](docs/hw2/nand2_lay.png) | ![](docs/hw2/nand2_ext.png) |
 |:--:|:--:| 
 | *NAND Layout* | *NAND Extracted* |
 
