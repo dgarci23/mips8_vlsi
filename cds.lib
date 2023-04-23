@@ -31,3 +31,6 @@ DEFINE wordlib8 wordlib8
 DEFINE muddlib11 muddlib11
 DEFINE processor8 processor8
 DEFINE HMC_Sheets_8ths oa/HMC_Sheets_8ths
+DEFINE controller /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/controller
+#Removed by ddDeleteObj: DEFINE processor9_gdsin /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/processor9_gdsin
+DEFINE processor8_gdsin /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/processor8_gdsin

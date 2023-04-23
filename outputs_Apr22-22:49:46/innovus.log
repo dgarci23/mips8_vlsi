@@ -1,0 +1,33 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.12-s095_1, built Thu Nov 9 12:10:01 PST 2017
+Options:	-stylus 
+Date:		Sat Apr 22 22:55:54 2023
+Host:		student06.cse.nd.edu (x86_64 w/Linux 3.10.0-1160.11.1.el7.x86_64) (4cores*8cpus*Quad-Core AMD Opteron(tm) Processor 2356 512KB)
+OS:		Red Hat Enterprise Linux Server release 7.7 (Maipo)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+
+***************************************************************************************
+INFO:    You have enabled the Common UI that has been internally qualified at Cadence but
+         has only limited customer testing. You are encouraged to work with Cadence directly
+         to qualify your usage and make sure it meets your needs before deploying it widely.
+***************************************************************************************
+
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_21518_student06.cse.nd.edu_dgarci23_gtz5Fj.
+
+Change the soft stacksize limit to 0.2%RAM (64 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+[INFO] Loading PVS 16.15 fill procedures
+@[DEV]innovus 1> 
+@[DEV]innovus 1> 
+*** Memory Usage v#1 (Current mem = 549.027M, initial mem = 195.883M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:35.0, real=0:02:28, mem=549.0M) ---

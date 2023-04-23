@@ -225,3 +225,261 @@
 \o MPS request: open design readonly
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cdkCreateNewLib->value = t
+\a cdsLibManager->cdkCreateNewLib->value = t ; customval
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->cellListBox->value = "datapath"
+\a cdsLibManager->cellLineEdit->value = "datapath"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->cellListBox->value = "datapath"
+\a cdsLibManager->cellLineEdit->value = "datapath"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->libListBox->value = "controller"
+\a cdsLibManager->libLineEdit->value = "controller"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libListBox->value = "controller"
+\a cdsLibManager->libLineEdit->value = "controller"
+\a cdsLibManager->cellListBox->value = "aludecoder"
+\a cdsLibManager->cellLineEdit->value = "aludecoder"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 42 9 2 "schematic")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteBothRadioButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(61 171 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(200 255 334 305))
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrSetCurrentWindow(mcMBXDLG)
+\a mcMBXDLG->pushButton1->value = t
+\a nrSetWindowVisibility(workingDialogForm "show")
+\o Deletion of view done. 1 of 1 failed.
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(243 343 278 143))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "controller"
+\a cdsLibManager->libLineEdit->value = "controller"
+\a cdsLibManager->cdkCreateNewLib->value = t
+\a cdsLibManager->cdkCreateNewLib->value = t ; customval
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "aludecoder"
+\a cdsLibManager->cellLineEdit->value = "aludecoder"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a lmgrLogShowPopup("mainListPopup2" 45 12 2 "extracted")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "chip"
+\a cdsLibManager->cellLineEdit->value = "chip"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 39 28 2 "chip")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(mcMBXDLG list(200 255 334 228))
+\a mcMBXDLG->pushButton1->value = t
+\a nrSetCurrentWindow(mcMBXDLG)
+\o Deleting cell "chip" from library "processor8".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deleted cell 'processor8/chip'.
+\o Deletion of 1 cell done.
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(243 343 278 143))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "chip"
+\a cdsLibManager->cellLineEdit->value = "chip"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a lmgrLogShowPopup("mainListPopup2" 39 7 2 "extracted")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->cellListBox->value = "chip"
+\a cdsLibManager->cellLineEdit->value = "chip"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->cdkCreateNewLib->value = t
+\a cdsLibManager->cdkCreateNewLib->value = t ; customval
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->cellListBox->value = "chip"
+\a cdsLibManager->cellLineEdit->value = "chip"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "processor8"
+\a cdsLibManager->libLineEdit->value = "processor8"
+\a cdsLibManager->cellListBox->value = "chip"
+\a cdsLibManager->cellLineEdit->value = "chip"
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "extracted"
+\a cdsLibManager->viewLineEdit->value = "extracted"
+\a cdsLibManager->libListBox->value = "processor9_gdsin"
+\a cdsLibManager->libLineEdit->value = "processor9_gdsin"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup0" 53 368 2 "processor9_gdsin")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "processor9_gdsin"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "processor9_gdsin"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(206 318 353 192))
+\a basicRenameForm->basicRenameToEdit->value = "processor8_gdsin"
+\a nrDialogAccept(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\o Checking rename library for access locks.
+\o Renaming library "processor9_gdsin" to "processor8_gdsin".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a basicRenameForm->basicRenameToEdit->value = "processor8_gdsin"
+\a nrResizeWindow(workingDialogForm list(248 348 268 133))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\o DB was auto refreshed.
+\a cdsLibManager->libListBox->value = "hw2_dgarci23"
+\a cdsLibManager->libLineEdit->value = "hw2_dgarci23"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "processor8_gdsin"
+\a cdsLibManager->libLineEdit->value = "processor8_gdsin"
+\a cdsLibManager->cellListBox->value = "chip"
+\a cdsLibManager->cellLineEdit->value = "chip"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 39 10 2 "layout")
+\a cdsLibManager->FileOpenROButton->value = t
+\o MPS request: open design readonly
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->fileExitButton->value = t
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)

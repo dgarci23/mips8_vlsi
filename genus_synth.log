@@ -1,0 +1,179 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.24-s038_1, built Mon Apr 15 2019
+Options: -files genus_synth.tcl -log genus_synth.log 
+Date:    Sat Apr 22 22:43:29 2023
+Host:    student06.cse.nd.edu (x86_64 w/Linux 3.10.0-1160.11.1.el7.x86_64) (4cores*8cpus*2physical cpus*Quad-Core AMD Opteron(tm) Processor 2356 512KB) (32845376KB)
+OS:      Red Hat Enterprise Linux Server release 7.7 (Maipo)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (26 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source genus_synth.tcl
+#@ Begin verbose source genus_synth.tcl
+@file(genus_synth.tcl) 3: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+model name	: Quad-Core AMD Opteron(tm) Processor 2356
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+cpu MHz		: 2300.000
+@file(genus_synth.tcl) 8: puts "Hostname : [info hostname]"
+Hostname : student06.cse.nd.edu
+@file(genus_synth.tcl) 15: set DESIGN controller
+@file(genus_synth.tcl) 16: set GEN_EFF medium
+@file(genus_synth.tcl) 17: set MAP_OPT_EFF high
+@file(genus_synth.tcl) 18: set DATE [clock format [clock seconds] -format "%b%d-%T"] 
+@file(genus_synth.tcl) 19: set _OUTPUTS_PATH outputs_${DATE}
+@file(genus_synth.tcl) 20: set _REPORTS_PATH reports_${DATE}
+@file(genus_synth.tcl) 21: set _LOG_PATH logs_${DATE}
+@file(genus_synth.tcl) 22: exec mkdir -p $_LOG_PATH
+@file(genus_synth.tcl) 24: set_db / .init_lib_search_path {.} 
+  Setting attribute of root '/': 'init_lib_search_path' = .
+@file(genus_synth.tcl) 25: set_db / .script_search_path {.} 
+  Setting attribute of root '/': 'script_search_path' = .
+@file(genus_synth.tcl) 26: set_db / .init_hdl_search_path {.} 
+  Setting attribute of root '/': 'init_hdl_search_path' = .
+@file(genus_synth.tcl) 35: set_db / .information_level 7 
+  Setting attribute of root '/': 'information_level' = 7
+@file(genus_synth.tcl) 42: read_libs muddlib.lib
+
+Threads Configured:3
+Warning : Invalid value specified. [LBR-531]
+        : Illegal value '1v' defined for attribute 'voltage_unit'. The attribute will be ignored. (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 15)
+        : Invalid value found for the attribute. Correct as per Liberty syntax.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'fudge' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 85)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'cap' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 90)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'res' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 92)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'length_10k' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 97)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'length_top' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 98)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'length_5k' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 102)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'length_2k' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 103)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'length_1k' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 104)
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'length_500' encountered. Ignoring (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 105)
+Info    : Missing library level attribute. [LBR-516]
+        : 'voltage_unit' unit not found in the library. Assuming '1 V'  (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 8)
+Info    : Missing library level attribute. [LBR-516]
+        : slew_derate_from_library not specified in the library, using .lib default of 1. (File /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8/muddlib.lib, Line 8)
+
+  Message Summary for Library muddlib.lib:
+  ****************************************
+  Invalid value specified. [LBR-531]: 1
+  Missing library level attribute. [LBR-516]: 2
+  An unsupported construct was detected in this library. [LBR-40]: 9
+  ****************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 5.000000, 25.000000) in library 'muddlib.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+@file(genus_synth.tcl) 43: read_physical -lef muddlib.lef
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'mux2_c_1x' has non-zero origin (-8399, 0).
+Info    : Macro with non-zero origin. [PHYS-127]
+        : Macro 'latch_c_1x' has non-zero origin (3000, 0).
+
+  According to lef_library, there are total 3 routing layers [ V(1) / H(2) ]
+
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'c' and 's' in libcell 'fulladder' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'c' and 's' in libcell 'fulladder' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'c' and 's' in libcell 'fulladder' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'c' and 's' in libcell 'fulladder'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'c' and 's' in libcell 'fulladder' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'b' and 's' in libcell 'fulladder' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'b' and 's' in libcell 'fulladder' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'b' and 's' in libcell 'fulladder' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'b' and 's' in libcell 'fulladder'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'b' and 's' in libcell 'fulladder' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'a' and 's' in libcell 'fulladder' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'a' and 's' in libcell 'fulladder' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'a' and 's' in libcell 'fulladder'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 's' and 'y' in libcell 'mux2_c_1x'.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'top' is non-monotonic.
+        : Non-monotonic wireload models can cause problems during synthesis and/or mapping.  Raising some of the points in the curve to give it a monotonic shape.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'top' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '10k' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '10k' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5k' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5k' is non-monotonic.
+@file(genus_synth.tcl) 55: read_hdl datapath/processor_multi.sv -language sv
+Warning : Cannot open file. [VLOGPT-650]
+        : File 'datapath/processor_multi.sv'.
+        : The specified file could not be opened.  Check the value of the init_hdl_search_path attribute.
+@file(genus_synth.tcl) 56: elaborate $DESIGN
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'top' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model 'top' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '10k' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '10k' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5k' is non-monotonic.
+Warning : Non-monotonic wireload model found. [LBR-81]
+        : 'Length' table in wireload model '5k' is non-monotonic.
+Error   : Could not find an HDL design. [CDFG-210] [elaborate]
+        : The design is 'controller'.
+        : Ensure that the design exists or the correct file was loaded.
+#@ End verbose source genus_synth.tcl
+1
+Encountered problems processing file: genus_synth.tcl
+WARNING: This version of the tool is 1468 days old.
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> exit
+Normal exit.

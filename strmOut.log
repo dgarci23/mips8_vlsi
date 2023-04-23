@@ -1,0 +1,122 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.7-64b 12/16/2018 07:36 (sjfhw317) $
+          : sub-version  IC6.1.7-64b.500.23 
+Started at: 23-Apr-2023  00:06:09
+User Name : dgarci23
+Host Name : student06.cse.nd.edu
+Directory : /escnfs/courses/fa22-cse-40462.01/dropbox/dgarci23/mips8
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /escnfs/courses/fa22-cse-40462.01/public/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 processor8
+strmFile                                mips8_chip_dgarci23
+topCell                                 chip
+view                                    layout
+logFile                                 strmOut.log
+techLib                                 UofU_TechLib_ami06
+layerMap                                /escnfs/courses/fa22-cse-40462.01/public/UofU_TechLib_ami06/UofU_TechLib_ami06.layermap
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating cellView NCSU_TechLib_ami06/M2_M1/layout as STRUCTURE M2_M1_CDNS_682222769930.
+INFO (XSTRM-223): 2. Translating cellView NCSU_TechLib_ami06/M3_M2/layout as STRUCTURE M3_M2_CDNS_682222769931.
+INFO (XSTRM-223): 3. Translating cellView UofU_Pads/padboxx/layout as STRUCTURE padboxx.
+INFO (XSTRM-223): 4. Translating cellView UofU_Pads/padbox/layout as STRUCTURE padbox.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'nodrc:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 5. Translating cellView UofU_Pads/pad_gnd/layout as STRUCTURE pad_gnd.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'text:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 6. Translating cellView UofU_Pads/pad_in/layout as STRUCTURE pad_in.
+INFO (XSTRM-223): 7. Translating cellView UofU_Pads/pad_out/layout as STRUCTURE pad_out.
+INFO (XSTRM-223): 8. Translating cellView UofU_Pads/pad_vdd/layout as STRUCTURE pad_vdd.
+INFO (XSTRM-223): 9. Translating cellView UofU_Pads/pad_corner/layout as STRUCTURE pad_corner.
+INFO (XSTRM-223): 10. Translating cellView processor8/padframe/layout as STRUCTURE padframe.
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 11. Translating cellView NCSU_TechLib_ami06/M2_M1/layout as STRUCTURE M2_M1_CDNS_682222769932.
+INFO (XSTRM-223): 12. Translating cellView NCSU_TechLib_ami06/M2_M1/layout as STRUCTURE M2_M1_CDNS_682222769933.
+INFO (XSTRM-223): 13. Translating cellView muddlib11/invbuf_4x/layout as STRUCTURE invbuf_4x.
+INFO (XSTRM-223): 14. Translating cellView muddlib11/mux2_dp_1x/layout as STRUCTURE mux2_dp_1x.
+INFO (XSTRM-223): 15. Translating cellView wordlib8/mux2_1x_8/layout as STRUCTURE mux2_1x_8.
+INFO (XSTRM-223): 16. Translating cellView muddlib11/inv_1x/layout as STRUCTURE inv_1x.
+INFO (XSTRM-223): 17. Translating cellView wordlib8/inv_1x_8/layout as STRUCTURE inv_1x_8.
+INFO (XSTRM-223): 18. Translating cellView processor8/condinv_8/layout as STRUCTURE condinv_8.
+INFO (XSTRM-223): 19. Translating cellView muddlib11/nand2_1x/layout as STRUCTURE nand2_1x.
+INFO (XSTRM-223): 20. Translating cellView muddlib11/nor2_1x/layout as STRUCTURE nor2_1x.
+INFO (XSTRM-223): 21. Translating cellView processor8/yzdetect_8/layout as STRUCTURE yzdetect_8.
+INFO (XSTRM-223): 22. Translating cellView muddlib11/and2_1x/layout as STRUCTURE and2_1x.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'changedLayer:tool0' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 23. Translating cellView wordlib8/and2_1x_8/layout as STRUCTURE and2_1x_8.
+INFO (XSTRM-223): 24. Translating cellView muddlib11/or2_1x/layout as STRUCTURE or2_1x.
+INFO (XSTRM-223): 25. Translating cellView wordlib8/or2_1x_8/layout as STRUCTURE or2_1x_8.
+INFO (XSTRM-223): 26. Translating cellView muddlib11/mux3_dp_1x/layout as STRUCTURE mux3_dp_1x.
+INFO (XSTRM-223): 27. Translating cellView wordlib8/mux3_1x_8/layout as STRUCTURE mux3_1x_8.
+INFO (XSTRM-223): 28. Translating cellView muddlib11/fulladder/layout as STRUCTURE fulladder.
+INFO (XSTRM-223): 29. Translating cellView wordlib8/adder_8/layout as STRUCTURE adder_8.
+INFO (XSTRM-223): 30. Translating cellView processor8/alu/layout as STRUCTURE alu.
+INFO (XSTRM-223): 31. Translating cellView processor8/regramadrbuf/layout as STRUCTURE regramadrbuf.
+INFO (XSTRM-223): 32. Translating cellView muddlib11/nand3_1x/layout as STRUCTURE nand3_1x.
+INFO (XSTRM-223): 33. Translating cellView processor8/regram_dp/layout as STRUCTURE regram_dp.
+INFO (XSTRM-223): 34. Translating cellView processor8/regram_8/layout as STRUCTURE regram_8.
+INFO (XSTRM-223): 35. Translating cellView muddlib11/nand5_1x/layout as STRUCTURE nand5_1x.
+INFO (XSTRM-223): 36. Translating cellView processor8/regram_zipper/layout as STRUCTURE regram_zipper.
+INFO (XSTRM-223): 37. Translating cellView processor8/regramvector_dp/layout as STRUCTURE regramvector_dp.
+INFO (XSTRM-223): 38. Translating cellView processor8/regramarray_dp/layout as STRUCTURE regramarray_dp.
+INFO (XSTRM-223): 39. Translating cellView processor8/mux2_1x_3/layout as STRUCTURE mux2_1x_3.
+INFO (XSTRM-223): 40. Translating cellView processor8/extend/layout as STRUCTURE extend.
+INFO (XSTRM-223): 41. Translating cellView muddlib11/mux4_dp_1x/layout as STRUCTURE mux4_dp_1x.
+INFO (XSTRM-223): 42. Translating cellView wordlib8/mux4_1x_8/layout as STRUCTURE mux4_1x_8.
+INFO (XSTRM-223): 43. Translating cellView muddlib11/clkinvbuf_4x/layout as STRUCTURE clkinvbuf_4x.
+INFO (XSTRM-223): 44. Translating cellView muddlib11/clkinvbufdual_4x/layout as STRUCTURE clkinvbufdual_4x.
+INFO (XSTRM-223): 45. Translating cellView muddlib11/flopen_dp_1x/layout as STRUCTURE flopen_dp_1x.
+INFO (XSTRM-223): 46. Translating cellView wordlib8/flopen_1x_8/layout as STRUCTURE flopen_1x_8.
+INFO (XSTRM-223): 47. Translating cellView muddlib11/flop_dp_1x/layout as STRUCTURE flop_dp_1x.
+INFO (XSTRM-223): 48. Translating cellView wordlib8/flop_1x_8/layout as STRUCTURE flop_1x_8.
+INFO (XSTRM-223): 49. Translating cellView muddlib11/inv_4x/layout as STRUCTURE inv_4x.
+INFO (XSTRM-223): 50. Translating cellView muddlib11/flopenr_dp_1x/layout as STRUCTURE flopenr_dp_1x.
+INFO (XSTRM-223): 51. Translating cellView wordlib8/flopenr_1x_8/layout as STRUCTURE flopenr_1x_8.
+INFO (XSTRM-223): 52. Translating cellView processor8/datapath/layout as STRUCTURE datapath.
+INFO (XSTRM-223): 53. Translating cellView UofU_TechLib_ami06/viagen21/layout as STRUCTURE viagen21_CDNS_682222769934.
+INFO (XSTRM-223): 54. Translating cellView UofU_TechLib_ami06/viagen21/layout as STRUCTURE viagen21_CDNS_682222769935.
+INFO (XSTRM-223): 55. Translating cellView UofU_TechLib_ami06/M3_M2/via as STRUCTURE M3_M2.
+INFO (XSTRM-223): 56. Translating cellView UofU_TechLib_ami06/M2_M1/via as STRUCTURE M2_M1.
+INFO (XSTRM-223): 57. Translating cellView muddlib11/latch_c_1x/layout as STRUCTURE latch_c_1x.
+INFO (XSTRM-223): 58. Translating cellView muddlib11/a2o1_1x/layout as STRUCTURE a2o1_1x.
+INFO (XSTRM-223): 59. Translating cellView muddlib11/nor3_1x/layout as STRUCTURE nor3_1x.
+INFO (XSTRM-223): 60. Translating cellView muddlib11/mux2_c_1x/layout as STRUCTURE mux2_c_1x.
+INFO (XSTRM-223): 61. Translating cellView muddlib11/fill_1_wide/layout as STRUCTURE fill_1_wide.
+INFO (XSTRM-223): 62. Translating cellView controller/controller/layout as STRUCTURE controller.
+INFO (XSTRM-223): 63. Translating cellView controller/aludec/layout as STRUCTURE aludec.
+INFO (XSTRM-223): 64. Translating cellView processor8/chip/layout as STRUCTURE chip.
+
+Summary of Objects Translated:
+	Scalar Instances:                       768
+	Array Instances:                        14
+	Polygons:                               416
+	Paths:                                  0
+	Rectangles:                             52882
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           775
+	Custom Vias:                            308
+	CdsGen Vias:                            0
+	Pathsegs:                               2050
+	Text:                                   0
+	TextDisplay:                            0
+	Cells:                                  64
+
+Elapsed Time: 1.2s   User Time: 0.3s   CPU Time: 0.2s   Peak VM: 9372KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '3' warning(s) found.
