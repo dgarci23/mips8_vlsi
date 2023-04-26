@@ -1,53 +1,55 @@
 # MIPS 8 bit processor
 
-This is the semester-long project for the University of Notre Dame VLSI Design class. 
+This is the semester-long project for the University of Notre Dame VLSI Design class. The project starts with some familiarization with the Cadence tools that will be used later in designing an 8 bit MIPS microprocessor. Most steps include the schematic of the design, the symbol, the layout and the extracted view. There are some steps with simulation schematics and waveform results.
 
 ## Getting Started with Virtuoso
 
 The first step was to get used to the Virtuoso schematic editor. In this case we created a schematic for a 2 input NAND gate and a 3 input NOR gate. Both logic gates were simulated using Spectre to check their behavior.
 
 ### 2 input NAND gate
+
+The 2 input NAND gate consists of a pull up network made of two NMOS in parallel and a pull down network made of two PMOS in series.
+
 ![nand2_sch](docs/lab1/nand2_sch.png)
+
+The waveforms for the NAND simulations are below and are consistent with what we expect from a NAND gate.
+
 ![nand2_waveform](docs/lab1/nand2_waveforms.png)
 
 
 ### 3 input NOR gate
+
+The 2 input NOR gate consists of a pull up network of 3 NMOS in series and a pull down network of 3 PMOS in parallel.
+
 ![nor3_sch](docs/lab1/nor3_sch.png)
+
+Below are the waveforms for the NOR simulations.
+
 ![nor3_waveform](docs/lab1/nor3_waveforms.png)
 
 ## Layouts: Basic PMOS and NMOS and an inverter cell
 
-To explore the layout tools of Virtuoso we created our own standard cells for an inverter
+To explore the layout tools of Virtuoso we created our own standard cells for an inverter. We will start by simulating the simple NMOS and PMOS cells.
 
 ### NMOS: schematic, symbol and IV curves
-| ![](docs/lab2/NMOS_IV_3_sch.png) | 
-|:--:| 
-| *NMOS schematic* |
 
-| ![](docs/lab2/sim_NMOS_IV_3_sch.png) |
-|:--:| 
-| *NMOS simulation schematic* |
+Below are the schematic, symbol and simulation schematic for the NMOS.
 
-| ![](docs/lab2/NMOS_IV_3_sym.png) |
-|:--:| 
-| *NMOS symbol* |
+| ![](docs/lab2/NMOS_IV_3_sch.png) | ![](docs/lab2/sim_NMOS_IV_3_sch.png) | ![](docs/lab2/NMOS_IV_3_sym.png) |
+|:--:|:--:|:--:| 
+| *NMOS schematic* | *NMOS simulation schematic* | *NMOS symbol* |
 
 | ![](docs/lab2/NMOS_IV_3_ade.png) |
 |:--:| 
 | *NMOS IV Curves* |
 
 ### PMOS: schematic, symbol and IV curves
-| ![](docs/lab2/PMOS_IV_3_sch.png) | 
-|:--:| 
-| *PMOS schematic* |
 
-| ![](docs/lab2/sim_PMOS_IV_3_sch.png) |
-|:--:| 
-| *PMOS simulation schematic* |
+Below are the schematic, symbol and simulation schematic for the PMOS.
 
-| ![](docs/lab2/PMOS_IV_3_sym.png) |
-|:--:| 
-| *PMOS symbol* |
+| ![](docs/lab2/PMOS_IV_3_sch.png) | ![](docs/lab2/sim_PMOS_IV_3_sch.png) | ![](docs/lab2/PMOS_IV_3_sym.png) |
+|:--:|:--:|:--:| 
+| *PMOS schematic* | *PMOS simulation schematic* | *PMOS symbol* |
 
 | ![](docs/lab2/PMOS_IV_3_ade.png) |
 |:--:| 
@@ -55,21 +57,17 @@ To explore the layout tools of Virtuoso we created our own standard cells for an
 
 ### Inverter Cell
 
-| ![](docs/lab2/inv_sch.png) | 
-|:--:| 
-| *Inverter schematic* |
+Now that we have simulated the NMOS and PMOS behavior, we continue with the inverter schematic and simulation.
 
-| ![](docs/lab2/sim_inverter_sch.png) |
-|:--:| 
-| *Inverter simulation schematic* |
-
-| ![](docs/lab2/inv_sym.png) |
-|:--:| 
-| *Inverter symbol* |
+| ![](docs/lab2/inv_sch.png) | ![](docs/lab2/sim_inverter_sch.png) | ![](docs/lab2/inv_sym.png) |
+|:--:|:--:|:--:| 
+| *Inverter schematic* | *Inverter simulation schematic* | *Inverter symbol* |
 
 | ![](docs/lab2/inv_waveforms.png) |
 |:--:| 
 | *Inverter Waveforms* |
+
+The inverter is the first cell that we will layout manually in Virtuoso.
 
 | ![](docs/lab2/inv_lay.png) | ![](docs/lab2/inv_ext.png) |
 |:--:|:--:| 
